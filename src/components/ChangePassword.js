@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Col, Container, Form, Row} from "react-bootstrap";
-import Img from '../img/okadoc-pro-logo.png';
+import Logo from './Logo';
 
 
 
@@ -35,8 +35,7 @@ const ChangePassword = () => {
             <Container fluid>
                 <Row>
                     <Col xl={4} lg={5} md={6} sm={9}  className="mt-5 mb-5 px-5 m-auto bg-white shadow-sm rounded">
-                        <img  className="mt-5 d-block mx-auto img-fluid w-50 mb-5" src={Img}></img>
-                        <h4 className="text-center mb-4">Change your password</h4>
+                        <Logo text={"Change your password"}/>
                         <Form>
                             <Form.Group className="mb-2" controlId="formBasicPassword">
                                 <Form.Control type="password" placeholder="Password" />

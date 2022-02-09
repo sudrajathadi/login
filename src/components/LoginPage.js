@@ -1,7 +1,7 @@
 import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import FormComponent from './FormComponent';
-import Img from '../img/okadoc-pro-logo.png';
+import Logo from './Logo';
 
 
 const LoginPage = () => {
@@ -35,8 +35,8 @@ const LoginPage = () => {
             <Container fluid>
                 <Row>
                     <Col xl={4} lg={5} md={6} sm={9}  className="mt-5 mb-5 px-5 m-auto bg-white shadow-sm rounded">
-                        <img  className="mt-5 d-block mx-auto img-fluid w-50 mb-5" src={Img}></img>
-                        <h4 className="text-center mb-4">Login to your account</h4>
+                        
+                        <Logo text={"Login to your account"}/>
 
                         <FormComponent/>
 

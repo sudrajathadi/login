@@ -1,8 +1,8 @@
 import React from 'react';
 import {Alert, Col, Container, Row} from "react-bootstrap";
-import Img from '../img/okadoc-pro-logo.png';
-import Checklist from '../img/Checklist.png';
+import Logo from './Logo';
 import FormComponent from './FormComponent';
+import AlertComponent from '../AlertComponent';
 
 
 
@@ -39,21 +39,10 @@ const Relogin = () => {
             <Container fluid>
                 <Row>
                     <Col xl={4} lg={5} md={6} sm={9}  className="mt-5 mb-5 px-5 m-auto bg-white shadow-sm rounded">
-                        <img  className="mt-5 d-block mx-auto img-fluid w-50 mb-4" src={Img}></img>
-
-                            <Alert variant="secondary">
-                                <Row>
-                                    <Col className="d-flex align-content-center flex-wrap" xs={2}>
-                                    <img className="mx-auto d-block justify-content-center w-75" src={Checklist}></img>
-                                    
-                                    </Col>    
-                                    <Col xs={10} className="d-flex align-items-center">
-                                    <p className="mb-0 small">Your password has been changed succesfully. Please log in to continue.</p>
-                                    </Col>
-                                </Row>                
-                            </Alert>
-                            <h4 className="text-center mb-4">Login to your account</h4>
-                            <FormComponent/>
+                        <Logo/>
+                        <AlertComponent alert={"Your password has been changed succesfully. Please log in to continue"}/>      
+                        <h4 className="text-center mb-4">Login to your account</h4>
+                        <FormComponent/>
                     </Col>
                     </Row>
              </Container>
